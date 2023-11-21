@@ -1,0 +1,11 @@
+@import "header.css";
+@import "footer.css";
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
