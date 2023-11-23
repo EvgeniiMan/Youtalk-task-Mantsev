@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtalk-Blog</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Montserrat|Roboto:wght@100">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blogs.css">
 </head>
 <body>
 
@@ -36,6 +39,38 @@
 
     <main>
 
+        <aside>
+            <span class="aside-menu">
+                <a href="#" class="aside-menu__el" title="Перейти на страницу &#34Главная&#34">Главная</a> 
+                <svg class="aside-menu__el" xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                    <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" 
+                    stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <a href="#" class="aside-menu__el" title="Перейти на страницу &#34Блог&#34">Блог</a>
+            </span>
+        </aside>
+
+        <section class="content">
+
+            <h1>Блог</h1>
+
+            <div class="content-tags">
+                <ul class="tags">
+                    <li class="tags__el"><img src="img/smile.jpg" alt="Улыбающееся лицо">Все</li>
+                    <li class="tags__el">Самооценка и самопринятие</li>
+                    <li class="tags__el"><img src="img/unicorn.jpg" alt="Единорог">Self</li>
+                    <li class="tags__el">Чувства и эмоции</li>
+                    <li class="tags__el">Тревога</li>
+                    <li class="tags__el">Упражнения</li>
+                    <li class="tags__el">Психология питания</li>
+                    <li class="tags__el">Насилие</li>
+                    <li class="tags__el">Личное здоровье</li>
+                </ul>
+            </div>
+
+        </section>
+
+
     </main>
 
     <footer>
@@ -58,14 +93,14 @@
     
             <section class="footer-subscription">
                 <h2>Одно письмо в неделю со свежими новостями и акциями</h2>
-                <span>
+                <article>
                     <input type="text" placeholder="Ваш e-mail"> 
                     <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
                         <path d="M0.5 12.0001H6.5V10.0001H0.5V0.846106C0.500015 0.75922 0.52267 0.673839 0.565733 0.598376C0.608797 0.522913 0.670781 0.459974 0.745577 0.415763C0.820372 0.371552 0.905398 0.347594 0.992273 0.346251C1.07915 0.344908 1.16487 0.366227 1.241 0.408106L19.703 10.5621C19.7814 10.6053 19.8468 10.6687 19.8923 10.7457C19.9378 10.8228 19.9618 10.9106 19.9618 11.0001C19.9618 11.0896 19.9378 11.1774 19.8923 11.2545C19.8468 11.3315 19.7814 11.3949 19.703 11.4381L1.241 21.5921C1.16487 21.634 1.07915 21.6553 0.992273 21.654C0.905398 21.6526 0.820372 21.6287 0.745577 21.5844C0.670781 21.5402 0.608797 21.4773 0.565733 21.4018C0.52267 21.3264 0.500015 21.241 0.5 21.1541V12.0001Z" fill="white"/>
                         </svg></button>
                     <p>Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
                         с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
-                </span>
+                </article>
             </section>
     
             <section class="footer-contacts">

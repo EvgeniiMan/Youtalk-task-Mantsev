@@ -1,0 +1,39 @@
+
+.content-tags {
+    width: 100%;
+
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+    
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.tags__el {
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+    padding: 6px 8px;
+    align-self: stretch;
+}
+
+.tags__el img {
+    height: 20px;
+    width: 20px;
+    padding: 1px;
+}
+
+.tags__el:hover {
+    cursor: pointer;
+}
