@@ -14,13 +14,14 @@
     list-style-type: none;
 }
 
-.tags__el {
+.tag {
     color: #333;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
     text-align: center;
+    background-color: white;
 
     border-radius: 24px;
     border: 1px solid #C1C5CD;
@@ -28,12 +29,52 @@
     align-self: stretch;
 }
 
-.tags__el img {
+.tag img {
     height: 20px;
     width: 20px;
     padding: 1px;
 }
 
-.tags__el:hover {
+.tag:hover {
     cursor: pointer;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.article {
+    display: block;
+    position: relative;
+    width: 20%;
+}
+
+.blog-tags {
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.button-more {
+    margin:  2em, auto;
+    width: 182px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: var(--primary-400, #35B3A9);
+    border: none;
+
+    color: #FFF;
+
+    text-align: center;
+    /* Web/Text bold 16:24 */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 }

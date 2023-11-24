@@ -99,3 +99,24 @@ footer {
 .copyrights__el:hover {
     cursor: pointer;
 }
+
+.socials {
+    position: relative;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border-radius: 60px;
+    background: #EFF5FB;
+}
+
+.other img {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+.s4 img {
+    position: absolute;
+    top: -.13em;
+    left: -.14em;
+}
