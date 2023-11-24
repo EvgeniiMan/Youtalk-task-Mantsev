@@ -109,6 +109,13 @@ footer {
     background: #EFF5FB;
 }
 
+.footer-contacts {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .other img {
     position: absolute;
     top: 25%;
