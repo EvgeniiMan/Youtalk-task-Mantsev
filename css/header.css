@@ -22,10 +22,10 @@ header {
     font-weight: 500;
     line-height: 114%; /* 15.96px */
     letter-spacing: 0.25px;
-}
 
-.menu__el:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .header-button {
