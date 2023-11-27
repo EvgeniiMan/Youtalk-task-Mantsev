@@ -26,13 +26,17 @@
     border-radius: 24px;
     border: 1px solid #C1C5CD;
     padding: 6px 8px;
-    align-self: stretch;
+    
+    display: flex;
+    align-items: center;
+
 }
 
 .tag img {
     height: 20px;
     width: 20px;
     padding: 1px;
+    margin-right: 5px;
 }
 
 .tag:hover {
@@ -89,6 +93,7 @@
 .article-content {
     width: 90%;
     margin: 0 auto;
+    flex: 1;
 }
 
 .article img {
@@ -141,8 +146,8 @@
 
 .article-date {
     position: absolute;
-    bottom: 1em;
-    left: 0;
+    bottom: 10px;
+    left: 10;
 
     color: #868686;
     font-size: 12px;
