@@ -29,7 +29,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
     gap: 5px;
-    
+    flex: 0;
     /*display: flex;
     flex-direction: column;
     flex-wrap: wrap;
