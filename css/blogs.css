@@ -56,6 +56,15 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.article:nth-child(1) {
+    grid-column: 1/span 1.5;
+
+}
+
+.article:nth-child(2) {
+    grid-column: 1.5/span 1.5;
+}
+
 
 .article {
     display: flex;
@@ -70,6 +79,7 @@
     &:hover {
       top: -2px;
       box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+      cursor: pointer;
     }
 
     border-radius: 20px;
@@ -87,10 +97,20 @@
 }
 
 .article-tags {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
     position: absolute;
     top: 1em;
     left: 1em;
+}
+
+.tag.article-tag {
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+
+    background: rgba(255, 255, 255, 0.70);
 }
 
 .article-content h2 {
