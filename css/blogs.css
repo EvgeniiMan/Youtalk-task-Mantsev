@@ -90,10 +90,19 @@
     border: 1px solid #C1C5CD;
 }
 
+.article-wrapper {
+    display: flex;
+    flex: 1;
+    padding: 30px 40px 60px;
+}
+
 .article-content {
     width: 90%;
     margin: 0 auto;
     flex: 1;
+    position: relative;
+    padding: 0;
+    height: 100%;
 }
 
 .article img {
@@ -146,8 +155,8 @@
 
 .article-date {
     position: absolute;
-    bottom: 10px;
-    left: 10;
+    bottom: -45px;
+    left: 0;
 
     color: #868686;
     font-size: 12px;
