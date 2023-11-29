@@ -1,4 +1,4 @@
-.content h1 {
+.blog h1 {
     overflow: hidden;
     color: var(--text-primary, #333);
     text-overflow: ellipsis;
@@ -10,7 +10,25 @@
     line-height: 56px; /* 116.667% */
 }
 
-.blog-copyright {
+.blog p {
+    color: var(--text-primary, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.blog ul {
+    list-style-type: none;
+}
+
+.blog ul li::before {
+    content: url('../img/blog-imgs/marker.svg');
+    color: aqua;
+    text-align: center;
+}
+
+.blog__copyright {
     color: #494949;
 
     font-size: 14px;
@@ -44,4 +62,14 @@
 
 .blog__sections ul ul {
     list-style-type: none;
+}
+
+blockquote {
+    text-align: start;
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--blue-b-80, #F3F7FE);
+    background-image: url("../img/blog-imgs/for-blockquote.svg");
+    background-position: 1.4em 2em;
+    background-repeat: no-repeat;
 }

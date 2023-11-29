@@ -14,28 +14,28 @@
     
     <header>
         
-        <div class="header-logo">
+        <div class="header__logo">
             <img src="img/logo.svg" alt="Логотип Youtalk">
         </div>
 
-        <menu>
-            <ul id="header-menu" class="menu">
-                <li class="menu__el">О нас</li>
-                <li class="menu__el">Тарифы</li>
-                <li class="menu__el">Для бизнеса</li>
-                <li class="menu__el">Психологам</li>
-                <li class="menu__el">Сертификат</li>
-                <li class="menu__el">Материалы  
+        <menu class="header__menu">
+            <ul>
+                <li class="header__menu_el">О нас</li>
+                <li class="header__menu_el">Тарифы</li>
+                <li class="header__menu_el">Для бизнеса</li>
+                <li class="header__menu_el">Психологам</li>
+                <li class="header__menu_el">Сертификат</li>
+                <li class="header__menu_el">Материалы  
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M2.09998 4.8999L6.99998 9.0999L11.9 4.8999" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </li>
-                <li class="menu__el">FAQ</li>
+                <li class="header__menu_el">FAQ</li>
             </ul>
         </menu>
 
-        <div>
-            <button class="header-button">Подобрать психолога</button>
+        <div class="header__get-psyhologist">
+            <button class="header__get-psyhologist_button">Подобрать психолога</button>
         </div>
 
 
@@ -61,11 +61,11 @@
             </span>
         </section>
 
-        <section class="content">
+        <section class="blog">
 
             <h1>Как не утонуть в тревоге и управлять своими страхами</h1>
 
-            <p class="blog-copyright">Автор Лиза Файнтух &#183 21.08.2021</p>
+            <p class="blog__copyright">Автор Лиза Файнтух &#183 21.08.2021</p>
 
             <img src="img/blog-imgs/main-img.png" alt="Как не утонуть">
 
@@ -117,17 +117,21 @@
 
                 <h2>Что ещё можно сделать с тревогой?</h2>
 
-                <ol>
+                <ul>
                     <li>Управлять ей через что-то внешнее: включать музыку, которая создает другое настроение, сесть за работу
                          с цифрами, которая быстренько активизирует другие участки мозга, читать блоги, которые вас успокаивают и отвлекают.</li>
                     <li>А еще порой можно разрешить себе тревогу заесть чем-то вкусным. Это, конечно, не самая здоровая стратегия, 
                         но в ряде ситуаций можно считать ее вполне рабочей. Особенно, когда внутренний ресурс на нуле, 
                         а поддерживающее окружение не в доступе.</li>
-                </ol>
+                </ul>
 
-                <img src="img/blog-imgs/" alt="Онтогенез речи отражает групповой эриксоновский гипноз.">
+                <div>
+                    <img src="img/blog-imgs/content-img1.png" alt="Онтогенез речи отражает групповой эриксоновский гипноз.">
 
-                <p class="blog__img_alt">Онтогенез речи отражает групповой эриксоновский гипноз. </p>
+                    <p class="blog__img_alt">Онтогенез речи отражает групповой эриксоновский гипноз. </p>
+
+                </div>
+
 
                 <p>
                     Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, 
@@ -147,14 +151,11 @@
                 </p>
 
                 <div class="blog__img-with-text-on-right">
-                    <img src="img/blog-imgs/" alt="Фото">
+                    <img src="img/blog-imgs/content-img2.png" alt="Фото">
                     <p>
                         Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то,
                          что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности,
-                          да и к жизни в целом.
-                    </p>
-                    <p>
-                        А еще порой можно разрешить себе тревогу заесть чем-то вкусным. 
+                          да и к жизни в целом. <br> А еще порой можно разрешить себе тревогу заесть чем-то вкусным. 
                     </p>
                 </div>
 
@@ -189,7 +190,7 @@
                 </ul>
 
                 <div class="blog__img-with-text-on-right">
-                    <img src="img/blog-imgs/" alt="Фото с руками">
+                    <img src="img/blog-imgs/content-img3.png" alt="Фото с руками">
                     <p>
                         Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, 
                         тем больше будет ваша устойчивость к стрессу.
@@ -213,14 +214,14 @@
 
                 <span>
                     <div class="blog__img-with-bottom-text">
-                        <img src="img/blog-imgs/" alt="Фото со стулом">
+                        <img src="img/blog-imgs/content-img4.png" alt="Фото со стулом">
                         <p>
                             Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, 
                             тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.
                         </p>
                     </div>
                     <div class="blog__img-with-bottom-text">
-                        <img src="img/blog-imgs/" alt="Вечернее фото">
+                        <img src="img/blog-imgs/content-img5.png" alt="Вечернее фото">
                         <p>
                             Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, 
                             тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.
@@ -228,7 +229,7 @@
                     </div>
                 </span>
 
-                <img src="" class="blog__separator" alt="Разделитель">
+                <img src="img/blog-imgs/separator.svg" class="blog__separator" alt="Разделитель">
                 
                 <p>
                     Одна из ключевых задач психотерапии как раз и заключается в том, чтобы этот репертуар расширять и 
@@ -274,55 +275,61 @@
 
     <footer>
 
-        <div class="footer-links">
-            <section class="footer-nav">
-                <ul class="nav">
-                    <li class="nav__el">О нас</li>
-                    <li class="nav__el">Тарифы</li>
-                    <li class="nav__el">Для бизнеса</li>
-                    <li class="nav__el">Психологам</li>
-                    <li class="nav__el">FAQ</li>
-                    <li class="nav__el">Блог</li>
-                    <li class="nav__el">Вебинары</li>
-                    <li class="nav__el">Подкаст</li>
-                    <li class="nav__el">Сертификат</li>
-                    <li class="nav__el">Контакты</li>
+        <div class="footer__links">
+            <section class="footer__links_nav">
+                <ul>
+                    <li class="footer__links_nav_el">О нас</li>
+                    <li class="footer__links_nav_el">Тарифы</li>
+                    <li class="footer__links_nav_el">Для бизнеса</li>
+                    <li class="footer__links_nav_el">Психологам</li>
+                    <li class="footer__links_nav_el">FAQ</li>
+                    <li class="footer__links_nav_el">Блог</li>
+                    <li class="footer__links_nav_el">Вебинары</li>
+                    <li class="footer__links_nav_el">Подкаст</li>
+                    <li class="footer__links_nav_el">Сертификат</li>
+                    <li class="footer__links_nav_el">Контакты</li>
                 </ul>
             </section>
     
-            <section class="footer-subscription">
+            <section class="footer__subscription">
                 <h2>Одно письмо в неделю со свежими новостями и акциями</h2>
-                <article>
-                    <input type="text" placeholder="Ваш e-mail"> 
-                    <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
+                <form class="footer__subscription_send-email">
+                    <input type="text" class="send-email__input" placeholder="Ваш e-mail"> 
+                    <button class="send-email__button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
                         <path d="M0.5 12.0001H6.5V10.0001H0.5V0.846106C0.500015 0.75922 0.52267 0.673839 0.565733 0.598376C0.608797 0.522913 0.670781 0.459974 0.745577 0.415763C0.820372 0.371552 0.905398 0.347594 0.992273 0.346251C1.07915 0.344908 1.16487 0.366227 1.241 0.408106L19.703 10.5621C19.7814 10.6053 19.8468 10.6687 19.8923 10.7457C19.9378 10.8228 19.9618 10.9106 19.9618 11.0001C19.9618 11.0896 19.9378 11.1774 19.8923 11.2545C19.8468 11.3315 19.7814 11.3949 19.703 11.4381L1.241 21.5921C1.16487 21.634 1.07915 21.6553 0.992273 21.654C0.905398 21.6526 0.820372 21.6287 0.745577 21.5844C0.670781 21.5402 0.608797 21.4773 0.565733 21.4018C0.52267 21.3264 0.500015 21.241 0.5 21.1541V12.0001Z" fill="white"/>
-                        </svg></button>
-                    <p>Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
-                        с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
-                </article>
+                        </svg>
+                    </button>
+                </form>
+                
+                <p>
+                    Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
+                    с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности
+                </p>
+                
             </section>
     
-            <section class="footer-contacts">
-
+            <section class="footer__contacts">
                 <span>
-                    <img src="/img/footer/sk-participant.svg" alt="">
+                    <button class="footer__contacts_SK-part"></button>
                 </span>
 
                 <span>
-                    <button class="socials other"><img src="/img/footer/VK.svg" alt=""></button>
-                    <button class="socials other"><img src="/img/footer/messenger2.svg" alt=""></button>
-                    <button class="socials other"><img src="/img/footer/messenger3.svg" alt=""></button>
-                    <button class="socials s4"><img src="/img/footer/messenger4.svg" alt=""></button>
+                    <button class="footer__contacts_socials VK"></button>
+                    <button class="footer__contacts_socials telegram"> </button>
+                    <button class="footer__contacts_socials twitter"> </button>
+                    <button class="footer__contacts_socials soc4"> </button>
                 </span>
 
             </section>
+
         </div>
 
-        <div class="footer-copyrights">
-            <ul class="copyrights">
-                <li class="copyrights__el">&#169Youtalk, 2018 - 2022</li>
-                <li class="copyrights__el">Юридические документы</li>
-                <li class="copyrights__el">Способы оплаты</li>
+        <div class="footer__copyrights">
+            <ul>
+                <li class="footer__copyrights_el">&#169Youtalk, 2018 - 2022</li>
+                <li class="footer__copyrights_el">Юридические документы</li>
+                <li class="footer__copyrights_el">Способы оплаты</li>
             </ul>
         </div>
     </footer> 
