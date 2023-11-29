@@ -1,13 +1,35 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+aside {
+    flex: 0 0 20%;
+}
+
+.blog {
+    flex: 0 0 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .blog h1 {
     overflow: hidden;
     color: var(--text-primary, #333);
     text-overflow: ellipsis;
-    white-space: nowrap;
+    
     /* H1 48:56 */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 56px; /* 116.667% */
+}
+
+.blog__img {
+    width: 100%;
 }
 
 .blog p {
@@ -72,4 +94,187 @@ blockquote {
     background-image: url("../img/blog-imgs/for-blockquote.svg");
     background-position: 1.4em 2em;
     background-repeat: no-repeat;
+}
+
+.blog__img_alt {
+    color: #868686;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: 0.25px;
+    opacity: 60%;
+}
+
+.blog__centered-text {
+    display: block;
+    color: var(--text-primary, #333);
+    text-align: center;
+    padding: 2em 4em;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    height: 168px;
+    
+    
+
+    background-image: url("../img/blog-imgs/back-orange-fig.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.blog__img-with-text-on-right {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.blog__task {
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--status-yellowe-white, #FEFAEC);
+
+    color: var(--text-primary, #333);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.blog__task strong {
+    font-weight: 700;
+}
+
+.yellow {
+    background: var(--status-yellowe-white, #FEFAEC);
+}
+
+.orange {
+    background: var(--status-orange-white, #FFF3EB);
+}
+
+.green {
+    background: rgba(3, 178, 165, 0.10);
+}
+
+.blog__many-imgs {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.blog__img-with-bottom-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+.blog__separator {
+    display: block;
+    margin: 0 auto;
+}
+
+.aside__first-one {
+    border-radius: 16px;
+    background: var(--blue-b-95, #E6F0FD);
+    text-align: center;
+    padding: 24px;
+}
+
+.aside__first-one h1 {
+    color: var(--text-primary, #333);
+    
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.aside__first-one p {
+    color: var(--text-primary, #333);
+    
+    /* Text 2 14:20 */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.aside__get-more {
+    margin: 1em;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: var(--primary-400, #35B3A9);
+    border: none;
+    width: 100%;
+
+    color: #FFF;
+
+    text-align: center;
+    /* Web/Text bold 16:24 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.aside__second {
+    display: flex;
+    
+    height: 481px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+
+    border-radius: 16px;
+    border: 1px solid #DEDEDE;
+
+    background: #FFF;
+}
+
+.aside__give-care {
+    width: 282px;
+    height: 280px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 16px 16px;
+    background-color: #2963A3;
+}
+
+.aside__add {
+    width: 282px;
+    height: 304px;
+    flex-shrink: 0;
+    padding: 32px;
+
+    border-radius: 24px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
+
+.aside__add_button-buy {
+    text-align: center;
+    width: 108px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: var(--primary-400, #35B3A9);
+    border: none;
+
+    color: #FFF;
+
+    /* Web/Text bold 16:24 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 }
