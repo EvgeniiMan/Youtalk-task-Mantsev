@@ -1,15 +1,21 @@
+
+
 .content {
     display: flex;
     flex-direction: row;
     gap: 10%;
+    justify-content: space-between;
 }
 
 aside {
-    flex: 0 0 20%;
+    flex: 0 0 19%;
+    min-width: 222px;
+    max-width: 282px;
+    gap: 2em;
 }
 
 .blog {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
 
     display: flex;
     flex-direction: column;
@@ -179,11 +185,42 @@ blockquote {
     margin: 0 auto;
 }
 
+
+
 .aside__first-one {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
     border-radius: 16px;
     background: var(--blue-b-95, #E6F0FD);
     text-align: center;
     padding: 24px;
+}
+
+
+
+.aside__first-one_img-with-people {
+    position: relative;
+    z-index: 3;
+}
+
+.aside__first-one_yellow-round {
+    position: absolute;
+    width: 240.729px;
+    height: 130.895px;
+    transform: rotate(17.388deg);
+    top: 3em;
+    z-index: 2;
+}
+
+.aside__first-one_back-stuff {
+    position: absolute;
+    top: .4em;
+    width: 152.738px;
+    height: 132.155px;
+    z-index: 2;
 }
 
 .aside__first-one h1 {
@@ -224,17 +261,22 @@ blockquote {
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .aside__second {
     display: flex;
-    
-    height: 481px;
-    padding: 24px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     flex-shrink: 0;
+    
+    position: relative;
+
+    padding: 24px;
 
     border-radius: 16px;
     border: 1px solid #DEDEDE;
@@ -242,8 +284,97 @@ blockquote {
     background: #FFF;
 }
 
+.aside__second_tags {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    display: block;
+    
+}
+
+.aside__second_tag {
+    border-radius: 6px;
+    background: rgba(243, 244, 248, 0.70);
+    padding: 0px 6px;
+    align-items: center;
+}
+
+.aside__second_photo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.aside__psyhologist-info {
+    border-bottom: 1px solid #DEDEDE;
+    width: 100%;
+}
+
+.aside__psyhologist-info h2 {
+    color: var(--text-primary, #333);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.aside__psyhologist-info p {
+    
+    text-align: center;
+    color: var(--neutrals-n-66, #A2A7B1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.aside__psyhologist-info strong {
+    color: var(--text-primary, #333);
+    
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.aside__psyhologist-work strong {
+    color: var(--text-primary, #333);
+    /* H5 bold 16:24 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.aside__psyhologist-work li {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.aside__psyhologist-work ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.aside__psyhologist-work li::before {
+    content: url('../img/blog-imgs/marker.svg');
+    color: aqua;
+    text-align: center;
+}
+
 .aside__give-care {
-    width: 282px;
+    
     height: 280px;
     flex-shrink: 0;
     border-radius: 0px 0px 16px 16px;
@@ -251,7 +382,7 @@ blockquote {
 }
 
 .aside__add {
-    width: 282px;
+    
     height: 304px;
     flex-shrink: 0;
     padding: 32px;
