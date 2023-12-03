@@ -84,31 +84,67 @@
 
 .blog__sections ul {
     list-style-type: none;
-
+    padding-left: 0;
+    margin: 0;
 }
 
-.blog__sections_first-level {
+.blog__sections ul {
     padding-left: 0;
 }
 
-.blog__sections_first-level li {
+.blog__sections li {
     position: relative;
     padding-left: 20px;
     
 }
 
-.blog__sections_first-level li::before {
+.blog__sections li::before {
     content: url('../img/blog-imgs/marker.svg');
     color: aqua;
     text-align: center;
     position: absolute;
     height: 24px;
+    width: 24px;
     left: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 }
 
+.blog__list {
+    padding-left: 0;
+    max-width: 580px;
+    list-style-type: none;
+}
+.blog__list > li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.blog__list > li::before {
+    content: url('../img/blog-imgs/marker.svg');
+    color: aqua;
+    text-align: center;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.blog__list ul {
+    padding-left: 0;
+}
+.blog__list ul > li {
+    padding-left: 25px;
+}
+.blog__list ul > li:before {
+    display: none;
+}
+.blog__list li:has(ul)::before {
+    bottom: unset;
+}
 
 
 /*.blog__sections_second-level li::before {
@@ -116,9 +152,6 @@
     content: "";
 }*/
 
-.blog__sections ul ul {
-    list-style-type: none;
-}
 
 blockquote {
     text-align: start;
