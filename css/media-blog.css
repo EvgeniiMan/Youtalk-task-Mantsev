@@ -1,0 +1,169 @@
+@media screen and (min-width: 414px) {
+    /* main content */
+    main {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .blog {
+        flex: 0 0 100%;
+    }
+
+    .blog__tags {
+        display: none;
+    }
+
+    .get-psychologist {
+        display: none;
+    }
+
+    .blog-separator {
+        display: none;
+    }
+
+    .right-box {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    main {
+        width: 100%;
+    }
+
+    .blog {
+        flex: 0 0 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+   /* main index */
+    main {
+        width: 100%;
+    }
+
+    .blog {
+        flex: 0 0 100%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+        box-sizing: content-box;
+    }
+
+    .aside__first-one{
+        width: calc(46.5% - 2em);
+        padding: 14px 23px;
+    }
+
+    .aside__first-one img {
+        width: 257px;
+        height: 206px;
+    }
+
+    .aside__second {
+        width: calc(46.5% - 2em);
+    }
+
+    .aside__give-care {
+        width: calc(46.5% - 2em);
+        height: 242px;
+    }
+
+    .asid__add {
+        width: calc(46.5% - 2em);
+        height: 242px;
+    }
+   
+}
+
+@media screen and (min-width: 1024px) {
+   /* main index */
+    main {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+    
+
+    .blog {
+        flex: 0 0 50%;
+    }
+
+    aside {
+        width: 222px;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        box-sizing: content-box;
+    }
+    
+    .aside__first-one img {
+        width: 174px;
+    }
+
+    .aside__give-care {
+        height: 292px;
+    }
+
+    .aside__add {
+        padding: 24px;
+    }
+   
+}
+
+@media screen and (min-width: 1440px) {
+
+   /* main index */
+    main {
+        width: 80%;
+    }
+
+    .blog {
+        flex: 0 0 50%;
+    }
+
+    .blog__tags {
+        display: block;
+    }
+
+    aside {
+        width: 282px;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .aside__give-care {
+        height: 292px; 
+        
+    }
+
+    .aside__add {
+        padding: 32px;
+    }
+
+    .right-box {
+        display: block;
+    }
+
+    .blog-separator {
+        display: block;
+    }
+    
+    .get-psychologist {
+        display: flex;
+    }
+
+}

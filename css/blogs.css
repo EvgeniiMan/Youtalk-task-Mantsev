@@ -1,3 +1,4 @@
+@import url("media-index.css");
 
 .content h1{
     color: var(--text-primary, #333);

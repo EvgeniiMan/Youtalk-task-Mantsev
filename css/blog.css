@@ -1,16 +1,12 @@
-
-
+@import url("media-blog.css");
 .content {
     display: flex;
-    flex-direction: row;
-    gap: 10%;
     justify-content: space-between;
 }
 
 
 .blog {
-    flex: 0 0 50%;
-
+    
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -46,12 +42,27 @@
 
 .blog ul {
     list-style-type: none;
+    padding-left: 0;
+}
+
+.blog li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
 }
 
 .blog ul li::before {
     content: url('../img/blog-imgs/marker.svg');
+    
     color: aqua;
-    text-align: center;
+    
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
 }
 
 .blog__copyright {
@@ -82,45 +93,19 @@
     padding: 0;
 } */
 
-.blog__sections ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
 
-.blog__sections ul {
-    padding-left: 0;
-}
-
-.blog__sections li {
-    position: relative;
-    padding-left: 20px;
-    
-}
-
-.blog__sections li::before {
-    content: url('../img/blog-imgs/marker.svg');
-    color: aqua;
-    text-align: center;
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
 
 .blog__list {
     padding-left: 0;
-    max-width: 580px;
     list-style-type: none;
 }
+
 .blog__list > li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
 }
+
 .blog__list > li::before {
     content: url('../img/blog-imgs/marker.svg');
     color: aqua;
@@ -133,15 +118,19 @@
     bottom: 0;
     margin: auto;
 }
+
 .blog__list ul {
     padding-left: 0;
 }
+
 .blog__list ul > li {
     padding-left: 25px;
 }
+
 .blog__list ul > li:before {
     display: none;
 }
+
 .blog__list li:has(ul)::before {
     bottom: unset;
 }
@@ -215,6 +204,8 @@ blockquote {
     font-weight: 700;
 }
 
+
+
 .yellow {
     background: var(--status-yellowe-white, #FEFAEC);
 }
@@ -271,9 +262,7 @@ blockquote {
 }
 
 aside {
-    width: 282px;
     display: flex;
-    flex-direction: column;
     gap: 2em;
 }
 
@@ -308,6 +297,7 @@ aside {
     font-weight: 400;
     line-height: 20px;
 }
+
 
 .aside__get-more {
     margin: 1em;
@@ -463,12 +453,11 @@ aside {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 292px;
     border-radius: 16px;
 }
 
 .aside__add {
-    padding: 32px;
+    
 
     border-radius: 24px;
     border: 1px solid #DEDEDE;
@@ -507,6 +496,7 @@ aside {
     width: 686px;
     height: 606px;
   }
+
   .right-box {
     overflow: hidden;
     height: 606px;
@@ -518,7 +508,7 @@ aside {
 
 
 .blog-separator {
-    display: block;
+    
     height: 1px;
     width: 100%;
     color: #dedede;
@@ -529,7 +519,7 @@ aside {
 .get-psychologist {
     width: 100%;
 
-    display: flex;
+    
     justify-content: space-evenly;
     align-items: center;
     background-image: url("../img/blog-imgs/under-image.png");
