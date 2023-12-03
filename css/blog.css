@@ -91,16 +91,30 @@
     padding-left: 0;
 }
 
+.blog__sections_first-level li {
+    position: relative;
+    padding-left: 20px;
+    
+}
+
 .blog__sections_first-level li::before {
     content: url('../img/blog-imgs/marker.svg');
     color: aqua;
     text-align: center;
+    position: absolute;
+    height: 24px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-.blog__sections_second-level li::before {
+
+
+/*.blog__sections_second-level li::before {
     display: none;
     content: "";
-}
+}*/
 
 .blog__sections ul ul {
     list-style-type: none;
