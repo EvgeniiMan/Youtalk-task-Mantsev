@@ -7,12 +7,6 @@
     justify-content: space-between;
 }
 
-aside {
-    flex: 0 0 19%;
-    min-width: 222px;
-    max-width: 282px;
-    gap: 2em;
-}
 
 .blog {
     flex: 0 0 50%;
@@ -23,6 +17,9 @@ aside {
 }
 
 .blog h1 {
+    margin-top: 1em;
+    margin-bottom: 0;
+
     overflow: hidden;
     color: var(--text-primary, #333);
     text-overflow: ellipsis;
@@ -32,6 +29,7 @@ aside {
     font-style: normal;
     font-weight: 700;
     line-height: 56px; /* 116.667% */
+
 }
 
 .blog__img {
@@ -57,6 +55,7 @@ aside {
 }
 
 .blog__copyright {
+    margin: 0;
     color: #494949;
 
     font-size: 14px;
@@ -77,15 +76,30 @@ aside {
 
 }
 
+/*.blog__sections ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
 .blog__sections ul {
     list-style-type: none;
+
 }
 
+.blog__sections_first-level {
+    padding-left: 0;
+}
 
-.blog__sections ul li::before {
+.blog__sections_first-level li::before {
     content: url('../img/blog-imgs/marker.svg');
     color: aqua;
     text-align: center;
+}
+
+.blog__sections_second-level li::before {
+    display: none;
+    content: "";
 }
 
 .blog__sections ul ul {
@@ -185,11 +199,39 @@ blockquote {
     margin: 0 auto;
 }
 
+.blog__tags {
+    margin-top: 1em;
+    text-decoration: none;
+    color: #2963A3;
 
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.blog__tags a:link, 
+.blog__tags a:visited {
+    text-decoration: none;
+    color: #2963A3;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+aside {
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
 .aside__first-one {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
 
@@ -197,30 +239,6 @@ blockquote {
     background: var(--blue-b-95, #E6F0FD);
     text-align: center;
     padding: 24px;
-}
-
-
-
-.aside__first-one_img-with-people {
-    position: relative;
-    z-index: 3;
-}
-
-.aside__first-one_yellow-round {
-    position: absolute;
-    width: 240.729px;
-    height: 130.895px;
-    transform: rotate(17.388deg);
-    top: 3em;
-    z-index: 2;
-}
-
-.aside__first-one_back-stuff {
-    position: absolute;
-    top: .4em;
-    width: 152.738px;
-    height: 132.155px;
-    z-index: 2;
 }
 
 .aside__first-one h1 {
@@ -293,11 +311,27 @@ blockquote {
     
 }
 
-.aside__second_tag {
+.aside__second_tags p {
     border-radius: 6px;
     background: rgba(243, 244, 248, 0.70);
     padding: 0px 6px;
     align-items: center;
+
+    color: var(--text-primary, #333);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.25px;
+}
+
+.aside__second_tags p:nth-child(1) {
+    width: 105px;
+}
+
+.aside__second_tags p:nth-child(2) {
+    width: 72px;
 }
 
 .aside__second_photo {
@@ -306,6 +340,10 @@ blockquote {
     height: 120px;
     margin: 0 auto;
     border-radius: 50%;
+}
+
+.aside__second ul {
+    padding: 0;
 }
 
 .aside__psyhologist-info {
@@ -374,22 +412,26 @@ blockquote {
 }
 
 .aside__give-care {
-    
-    height: 280px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 16px 16px;
-    background-color: #2963A3;
+    background-image: url("../img/blog-imgs/gift.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 292px;
+    border-radius: 16px;
 }
 
 .aside__add {
-    
-    height: 304px;
-    flex-shrink: 0;
     padding: 32px;
 
     border-radius: 24px;
     border: 1px solid #DEDEDE;
     background: #FFF;
+
+    background-image: url("../img/blog-imgs/gifts.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 304px;
 }
 
 .aside__add_button-buy {
@@ -408,4 +450,121 @@ blockquote {
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+}
+
+.right-box__el {
+    display: block;
+    background-image: url("../img/blog-imgs/large-item.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 686px;
+    height: 606px;
+  }
+  .right-box {
+    overflow: hidden;
+    height: 606px;
+    position: absolute;
+    right: 0;
+    top: 2404px;
+    width: 218px;
+  }
+
+
+.blog-separator {
+    display: block;
+    height: 1px;
+    width: 100%;
+    color: #dedede;
+    margin-bottom: 72px;
+    margin-top: 48px;
+}
+
+.get-psychologist {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/blog-imgs/under-image.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 108px;
+    position: relative;
+}
+
+.get-psychologist__wrapper {
+    width: 348px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.get-psychologist__wrapper h1 {
+    color: var(--text-primary, #333);
+    /* H1 48:56 */
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.get-psychologist__wrapper p {
+    color: var(--text-primary, #333);
+    /* Text 18:26 */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.get-psychologist__button {
+    height: 60px;
+    width: 236px;
+    padding: 20px ;
+    border-radius: 4px;
+    background: var(--button-1, #16C8BB);
+    border: none;
+
+    color: var(--text-white, #FFF);
+    
+    /* xl/ button */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.get-psychologist__image {
+    width: 520px;
+    height: 330px;
+    background-image: url("../img/blog-imgs/he-and-she.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.get-psychologist__right-image {
+    position: absolute;
+    width: 73px;
+    height: 243px;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+}
+
+.get-psychologist__right-image_item {
+    background-image: url("../img/blog-imgs/right-bottom-circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 272px;
+    height: 240px;
 }

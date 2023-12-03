@@ -1,0 +1,159 @@
+@media (min-width: 414px) {
+    /*------------------ header ------------------------------------*/
+    .header__menu {
+        display: none;
+    }
+
+    .header__hamburger-menu_button {
+        display: block;
+    }
+
+    .header__get-psyhologist_button {
+        display: none;
+    }
+
+    /* main content */
+
+    .article {
+        flex: 0 0 100%;
+    }
+
+
+    /*------------------ footer ------------------------------------*/
+    .footer__copyrights ul {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (min-width: 650px) {
+    /*------------------ header ------------------------------------*/
+    .header__menu {
+        display: none;
+    }
+
+    .header__hamburger-menu_button {
+        display: block;
+    }
+
+    .header__get-psyhologist_button {
+        display: none;
+    }
+
+    /* main contet */
+    .article {
+        flex: 0 0 100%;
+    }
+
+    /*------------------ footer ------------------------------------*/
+
+    .footer__copyrights ul {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px){
+    /*------------------ header ------------------------------------*/
+    .header__menu {
+        display: none;
+    }
+
+    .header__hamburger-menu_button {
+        display: block;
+    }
+
+    .header__get-psyhologist_button {
+        display: none;
+    }
+
+    /* main index */
+    
+    .article:nth-child(1),
+    .article:nth-child(2) {
+        flex: 0 0 100%;
+    }
+    
+    .article {
+        flex: 0 0 calc(45% - 4em);
+    }
+
+
+    /*------------------ footer ------------------------------------*/
+    .footer__copyrights ul {
+        flex-direction: column;
+        
+    }
+
+}
+
+@media (min-width: 1024px) {
+    /*------------------ header ------------------------------------*/
+    .header__hamburger-menu_button {
+        display: none;
+    }
+    .header__menu {
+        display: block;
+    }
+
+    .header__get-psyhologist_button {
+        display: block;
+    }
+    /* main index */
+    .article:nth-child(1),
+    .article:nth-child(2) {
+        flex: 0 0 100%;
+    }
+
+    .article {
+        flex: 0 0 calc(100% / 3 - 4em);
+    }
+
+
+
+
+    /*------------------ footer ------------------------------------*/
+
+
+    .footer__copyrights ul {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1440px) {
+    /*------------------ header ------------------------------------*/
+    .header__hamburger-menu_button {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+    }
+    /* main index */
+    .article:nth-child(1),
+    .article:nth-child(2) {
+        flex: 0 0 calc(46.6% - 2em);
+    }
+
+    .article {
+        flex: 0 0 calc(100% / 3 - 4em);
+    }
+
+    /*------------------ footer ------------------------------------*/
+    .footer__links_nav {
+        flex: 0 0 25%;
+    }
+
+    .footer__subscription {
+        flex: 0 0 35%;
+    }
+
+    .footer__contacts {
+        flex: 0 0 15%;
+    }
+
+    .footer__copyrights ul {
+        flex-direction: row;
+    }
+
+}

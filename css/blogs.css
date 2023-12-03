@@ -10,15 +10,20 @@
 
 .content-tags {
     display: block;
-    width: 100%;
+    width: inherit;
     margin: 0;
     padding: 0;
 }
 
+
+
 .content-tags ul {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+    
     gap: 4px;
     
     flex-wrap: wrap;
@@ -72,14 +77,8 @@
     
 }
 
-.article:nth-child(1),
-.article:nth-child(2) {
-    flex: 0 0 calc(46.6% - 2em);
-}
-
 
 .article {
-    flex: 0 0 calc(100% / 3 - 4em);
     
     display: flex;
     flex-direction: column;
@@ -129,6 +128,7 @@
     top: 1em;
     left: 1em;
 }
+
 
 .tag.article-tag {
     border-radius: 24px;

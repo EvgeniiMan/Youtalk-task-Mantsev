@@ -1,5 +1,5 @@
 header {
-    position: sticky;
+    position: relative;
     width: 100%;
 
     display: flex;
@@ -10,6 +10,13 @@ header {
 }
 
 
+.header__logo {
+    margin: 11px 0 16px;
+}
+
+.header__menu {
+    padding: 0;
+}
 
 .header__menu ul {
     display: flex;
@@ -42,5 +49,18 @@ header {
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+.header__hamburger-menu_button {
+    width: 40px;
+    height: 40px;
+    color: #03B2A5;
+    border: none;
+    background-color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
     }
 }
