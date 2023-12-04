@@ -228,7 +228,7 @@ footer {
     }
 }
 
-@media (min-width: 320px) and  (max-width: 413px){
+@media screen and (min-width: 320px) and  (max-width: 413px) {
     footer {
         
         padding: 35px 18px;
@@ -285,9 +285,8 @@ footer {
 }
 
 
-@media (min-width: 414px) and (max-width: 767px) {
+@media screen and (min-width: 414px) and (max-width: 767px) {
     footer {
-        
         padding: 35px 19px;
         padding-right: 0px;
     }
@@ -341,7 +340,7 @@ footer {
     }
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width:1023px) {
     footer {
         padding: 35px 20px;
         padding-right: 0;
@@ -380,7 +379,7 @@ footer {
 
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
     footer {
         padding-top: 40px;
     }
@@ -413,7 +412,7 @@ footer {
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
 
     footer {
         padding-top: 40px;
