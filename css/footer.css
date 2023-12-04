@@ -8,14 +8,11 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
-    gap: 5%;
-    justify-content:space-around;
+    
     align-items: center;
 
-    padding-bottom: 1em;
-    margin-bottom: 1em;
     
-    border-bottom: 1px solid #9D9D9D;
+    
 }
 
 
@@ -24,8 +21,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
-    gap: 5px;
-    flex: 0;
+    gap: 16px;
+    justify-content: center;
+    
+    margin: 0;
+    padding-left: 0;
+
     /*display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -42,9 +43,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    margin: .3em 1em;
-
-    height: 20%;
+    
 
     &:hover {
         cursor: pointer;
@@ -61,6 +60,10 @@ footer {
 
 .footer__subscription h2 {
     color: #FFF;
+
+    margin: 0;
+    width: 356px;
+    padding-bottom: 8px;
     
     font-size: 18px;
     font-style: normal;
@@ -75,6 +78,8 @@ footer {
     font-weight: 400;
     line-height: 18px; /* 150% */
     letter-spacing: 0.25px;
+
+    width: 486px;
 
     opacity: 0.7;
 }
@@ -117,10 +122,12 @@ footer {
 .footer__contacts {
 
     justify-self: center;
-    margin: auto;
+    
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 40px;
+
+    
 }
 
 .footer__contacts_socials {
@@ -129,6 +136,8 @@ footer {
     background: #EFF5FB;
     border: none;
     border-radius: 50%;
+
+    margin-right: 16px;
 }
 
 .footer__contacts_SK-part {
@@ -185,15 +194,21 @@ footer {
 }
 
 .footer__copyrights {
-    padding: 10px 0;
+    width: 85%;
+    margin: 0 auto;
+    padding: 16px 0 17px;
+
+    border-top: 1px solid #9D9D9D;
 }
 
-.footer__copyrights ul{
-    display: flex;
-    justify-content: flex-start;
+
+.footer__copyrights ul  {
+    display: inline-flex;
     align-items: flex-start;
+    gap: 48px;
+    justify-content: flex-start;
     margin: 0;
-    padding: .5em 0;
+    padding: 0;
     
     
     list-style-type: none;
@@ -201,7 +216,6 @@ footer {
 
 .footer__copyrights_el {
     display: inline;
-    margin: 3em 1em;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -214,52 +228,220 @@ footer {
     }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 320px) and  (max-width: 413px){
+    footer {
+        
+        padding: 35px 18px;
+        padding-right: 0px;
+    }
 
-    /*------------------ footer ------------------------------------*/
+    .footer__links {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 23px;
+        height: 587px;
+        margin: 0;
+    }
+
+    .footer__links_nav {
+        /*flex: 0 0 25%;*/
+        width: 100%;
+        height: 184px;
+    }
+
+    .footer__subscription {
+        /*flex: 0 0 50%;*/
+        width: 288px;
+        
+    }
+
+    
+    .footer__subscription h2,
+    .footer__subscription p,
+    .footer__subscription_send-email,
+    .send-email__input {
+        width: 288px;
+    }
+
+    .footer__contacts {
+        /*flex: 0 0 15%;*/
+        width: 100%;
+    }
+
+    .footer__copyrights ul {
+        flex-direction: row;
+    }
+
+    .footer__copyrights {
+        width: 728px;
+        margin: 0;
+    }
+
     .footer__copyrights ul {
         flex-direction: column;
+        gap: 24px;
     }
 
 }
 
 
-@media (min-width: 650px) {
-       /*------------------ footer ------------------------------------*/
+@media (min-width: 414px) and (max-width: 767px) {
+    footer {
+        
+        padding: 35px 19px;
+        padding-right: 0px;
+    }
+
+    .footer__links {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 23px;
+        height: 587px;
+        margin: 0;
+    }
+
+    .footer__links_nav {
+        /*flex: 0 0 25%;*/
+        width: 100%;
+        height: 184px;
+    }
+
+    .footer__subscription {
+        /*flex: 0 0 50%;*/
+        width: 375px;
+        height: 170px;
+    }
+
+    .footer__subscription p {
+        width: 375px;
+    }
+
+    .footer__subscription_send-email,
+    .send-email__input {
+        width: 375px;
+    }
+
+    .footer__contacts {
+        /*flex: 0 0 15%;*/
+        width: 100%;
+    }
+
+    .footer__copyrights ul {
+        flex-direction: row;
+    }
+
+    .footer__copyrights {
+        
+        margin: 0;
+    }
 
     .footer__copyrights ul {
         flex-direction: column;
+        gap: 24px;
     }
 }
 
 @media (min-width: 768px){
+    footer {
+        padding: 35px 20px;
+        padding-right: 0;
+    }
 
-    /*------------------ footer ------------------------------------*/
+    .footer__links {
+        justify-content: flex-start;
+        height: 394px;
+        margin: 0;
+    }
+
+    .footer__links_nav {
+        /*flex: 0 0 25%;*/
+        width: 247px;
+        height: 184px;
+    }
+
+    .footer__subscription {
+        /*flex: 0 0 50%;*/
+        width: 450px;
+        height: 170px;
+    }
+
+    .footer__contacts {
+        /*flex: 0 0 15%;*/
+        width: 221px;
+    }
+
     .footer__copyrights ul {
-        flex-direction: column;
-        
+        flex-direction: row;
+    }
+
+    .footer__copyrights {
+        margin: 0;
     }
 
 }
 
 @media (min-width: 1024px) {
+    footer {
+        padding-top: 40px;
+    }
+
+    .footer__links {
+        padding: 40px auto 24px;
+        height: 246px;
+    }
+
+    .footer__links_nav {
+        /*flex: 0 0 25%;*/
+        width: 247px;
+        height: 184px;
+    }
+
+    .footer__subscription {
+        /*flex: 0 0 50%;*/
+        width: 450px;
+        height: 170px;
+    }
+
+    .footer__contacts {
+        /*flex: 0 0 15%;*/
+        width: 221px;
+    }
+
+
     .footer__copyrights ul {
         flex-direction: row;
     }
 }
 
 @media (min-width: 1440px) {
+
+    footer {
+        padding-top: 40px;
+    }
+
+    .footer__links {
+        justify-content:space-evenly;
+        height: 248px;
+        padding: 0;
+        margin: 0;
+    }
+    
     
     .footer__links_nav {
-        flex: 0 0 25%;
+        /*flex: 0 0 25%;*/
+        width: 310px;
+        height: 184px;
     }
 
     .footer__subscription {
-        flex: 0 0 35%;
+        /*flex: 0 0 50%;*/
+        width: 486px;
+        height: 170px;
     }
 
     .footer__contacts {
-        flex: 0 0 15%;
+        /*flex: 0 0 15%;*/
+        width: 221px;
     }
 
     .footer__copyrights ul {

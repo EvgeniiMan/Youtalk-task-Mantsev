@@ -1,4 +1,4 @@
-@media (min-width: 414px) {
+@media screen and (min-width: 414px) {
      /* main content */
     main {
         width: 100%;
@@ -12,7 +12,7 @@
 }
 
 
-@media (min-width: 650px) {
+@media screen and (min-width: 650px) {
     /* main contet */
     main {
         width: 100%;
@@ -25,7 +25,7 @@
 
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
     /* main index */
     main {
         width: 100%;
@@ -42,7 +42,7 @@
 
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     /* main index */
     main {
         width: 100%;
@@ -58,7 +58,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
 
     /* main index */
     main {
@@ -67,7 +67,7 @@
 
     .article:nth-child(1),
     .article:nth-child(2) {
-        flex: 0 0 calc(46.6% - 2em);
+        flex: 0 0 calc(50% - 2em);
     }
 
     .article {

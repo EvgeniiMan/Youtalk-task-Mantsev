@@ -63,7 +63,7 @@
 .content h1 {
     color: var(--text-primary, #333);
     /* H1 48:56 */
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -78,6 +78,12 @@
     
 }
 
+
+.hero {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
 
 .article {
     
