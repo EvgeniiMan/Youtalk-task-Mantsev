@@ -139,14 +139,24 @@
     }
 
     aside {
-        width: 282px;
+        
         display: flex;
         flex-direction: column;
         gap: 2em;
     }
 
+    .aside__first-one {
+        box-sizing: content-box;
+        width: 282px;
+    }
+
+    .aside__second {
+        width: 282px;
+    }
+
     .aside__give-care {
         height: 292px; 
+        width: 282px;
         
     }
 
