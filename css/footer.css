@@ -364,6 +364,10 @@ footer {
         height: 170px;
     }
 
+    .footer__subscription p {
+        width: 450px;
+    }
+
     .footer__contacts {
         /*flex: 0 0 15%;*/
         width: 221px;
@@ -385,6 +389,7 @@ footer {
     }
 
     .footer__links {
+        justify-content:space-evenly;
         padding: 40px auto 24px;
         height: 246px;
     }

@@ -1,43 +1,96 @@
 @media screen and (min-width: 320px) and  (max-width: 413px) {
-     /* main content */
-    main {
-        width: 100%;
+     main {
+        width: 95%;
+    }
+
+    .tags {
+        flex-wrap: nowrap;
     }
 
 
-    .article {
+    .hero {
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .hero .article
+    {
         flex: 0 0 100%;
+    }
+
+    .other-articles {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .article:nth-child(3),
+    .article:nth-child(4),
+    .article:nth-child(5),
+    .article:nth-child(6) {
+        display: none;
     }
 
 }
 
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
-    /* main contet */
     main {
-        width: 100%;
+        width: 95%;
     }
 
+    .tags {
+        flex-wrap: nowrap;
+    }
 
-    .article {
+    .hero {
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .hero .article
+    {
         flex: 0 0 100%;
+    }
+
+    .other-articles {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .article:nth-child(3),
+    .article:nth-child(4),
+    .article:nth-child(5),
+    .article:nth-child(6) {
+        display: none;
     }
 
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
-    /* main index */
     main {
-        width: 100%;
+        width: 95%;
     }
-    
-    .article:nth-child(1),
-    .article:nth-child(2) {
+
+    .tags {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .hero .article
+    {
         flex: 0 0 100%;
     }
-    
-    .article {
-        flex: 0 0 calc(45% - 4em);
+
+    .other-articles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
 }
@@ -46,6 +99,10 @@
     /* main index */
     main {
         width: 95%;
+    }
+
+    .tags {
+        flex-wrap: wrap;
     }
 
     .hero {
@@ -71,6 +128,10 @@
     /* main index */
     main {
         width: 80%;
+    }
+
+    .tags {
+        flex-wrap: wrap;
     }
 
     .hero {
