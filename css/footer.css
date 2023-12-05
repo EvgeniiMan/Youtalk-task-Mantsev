@@ -1,6 +1,6 @@
 footer {
     display: block;
-    width: 100%;
+    width: auto;
     background-color: #2963A3;
 }
 
@@ -421,7 +421,7 @@ footer {
     }
 
     .footer__links {
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         height: 248px;
         padding: 0;
         margin: 0;
