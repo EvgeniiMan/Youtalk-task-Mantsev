@@ -2,30 +2,26 @@
 .content {
     display: flex;
     justify-content: space-between;
+    margin-top: 54px;
 }
 
 
 .blog {
-    
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 .blog h1 {
-    margin-top: 54px;
-    margin-bottom: 0;
+    
+    margin: 0;
 
     overflow: hidden;
     color: var(--text-primary, #333);
     text-overflow: ellipsis;
     
-    /* H1 48:56 */
-    font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px; /* 116.667% */
-
 }
 
 .blog__copyright {
@@ -95,19 +91,23 @@
     bottom: unset!important;
 }
 
+.blog__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .blog__content h3 {
     margin: 0;
 
     color: var(--text-primary, #333);
 
-    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
 }
 
-.blog p {
-    margin: 24px 0;
+.blog__content p {
+    margin: 0;
 
     color: var(--text-primary, #333);
     font-size: 16px;
@@ -142,7 +142,7 @@
 
 
 blockquote {
-    width: 100%;
+    width: inherit;
     margin: 0;
     padding: 24px;
     text-align: start;
@@ -152,7 +152,23 @@ blockquote {
     background-image: url("../img/blog-imgs/for-blockquote.svg");
     background-position: 1.4em 2em;
     background-repeat: no-repeat;
+
+    color: var(--text-primary, #333);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
 }
+
+blockquote strong{
+    color: var(--text-primary, #333);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+}
+
 
 .blog__img_alt {
     color: #868686;
@@ -168,21 +184,16 @@ blockquote {
     display: block;
     color: var(--text-primary, #333);
     text-align: center;
-    padding-top: 24px;
-    
-    height: 150px;
     
     
-
     background-image: url("../img/blog-imgs/back-orange-fig.svg");
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
 .blog__centered-text p {
-    width: 485px;
+    
     margin: auto;
-    font-family: 'Monsterrat', sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -191,9 +202,16 @@ blockquote {
 
 .blog__img-with-text-on-right {
     display: flex;
-    flex-direction: row;
-    gap: 1em;
+    
+    gap: 16px;
 }
+
+.blog__img-with-text-on-right img {
+    max-width: 100%;
+    display: block;
+    align-self: stretch;
+}
+
 
 .blog__task {
     padding: 24px;
@@ -237,14 +255,30 @@ blockquote {
 .blog__many-imgs {
     margin-top: 2em;
     display: flex;
-    flex-direction: row;
-    gap: 2em;
+    
+    gap: 24px;
 }
 
 .blog__img-with-bottom-text {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    
+
+    color: var(--text-primary, #333);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.blog__img-with-bottom-text img {
+    max-width: 100%;
+    display: block;
+}
+
+.blog__img-with-bottom-text p {
+    margin: 0;
 
 }
 
@@ -258,7 +292,6 @@ blockquote {
     text-decoration: none;
     color: #2963A3;
 
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -269,54 +302,64 @@ blockquote {
 .blog__tags a:visited {
     text-decoration: none;
     color: #2963A3;
-
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
 }
 
-aside {
-    display: flex;
-    gap: 2em;
+.mini-tag,
+.mini-tag a:link, 
+.mini-tag a:visited {
+    text-decoration: none;
+    color: #2963A3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
 
-.aside__first-one {
+.aside__first {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 
     border-radius: 16px;
     background: var(--blue-b-95, #E6F0FD);
     text-align: center;
-    padding: 24px;
 }
-
-.aside__first-one h1 {
-    color: var(--text-primary, #333);
     
-    font-family: Montserrat;
+
+.aside__first h1 {
+    margin: 0;
+    color: var(--text-primary, #333);
+    text-align: center;
+
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
 }
 
-.aside__first-one p {
+.aside__first p {
     color: var(--text-primary, #333);
     
-    /* Text 2 14:20 */
-    font-family: Montserrat;
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
 }
 
+.aside__first img {
+    display: block;;
+    max-width: 100%;
+}
+
 
 .aside__get-more {
-    margin: 1em;
+    margin: 0;
     padding: 12px 16px;
     border-radius: 4px;
     background: var(--primary-400, #35B3A9);
@@ -326,8 +369,7 @@ aside {
     color: #FFF;
 
     text-align: center;
-    /* Web/Text bold 16:24 */
-    font-family: Montserrat;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -399,82 +441,104 @@ aside {
     padding: 0;
 }
 
-.aside__psyhologist-info {
+.aside__second_psyhologist-info {
     border-bottom: 1px solid #DEDEDE;
     width: 100%;
 }
 
-.aside__psyhologist-info h2 {
+.aside__second_psyhologist-info h2 {
+    margin: 0;
+
     color: var(--text-primary, #333);
     text-align: center;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
 }
 
-.aside__psyhologist-info p {
-    
+.aside__second_psyhologist-info p {
+    margin: 0;
+
     text-align: center;
     color: var(--neutrals-n-66, #A2A7B1);
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
 }
 
-.aside__psyhologist-info strong {
+.aside__second_psyhologist-info strong {
     color: var(--text-primary, #333);
     
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
 }
 
-.aside__psyhologist-work strong {
+.aside__second_psyhologist-work p {
+    margin: 0;
+}
+
+.aside__second_psyhologist-work strong {
+
     color: var(--text-primary, #333);
-    /* H5 bold 16:24 */
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
 }
 
-.aside__psyhologist-work li {
-    font-family: Montserrat;
+.aside__second_psyhologist-work li {
+    position: relative;
+    padding-left: 24px;
+    margin: 8px 0;
+
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
 }
 
-.aside__psyhologist-work ul {
+.aside__second_psyhologist-work ul {
     list-style-type: none;
     margin: 0;
 }
 
-.aside__psyhologist-work li::before {
+.aside__second_psyhologist-work li::before {
+    position: absolute;
     content: url('../img/blog-imgs/marker.svg');
     color: aqua;
     text-align: center;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
-.aside__give-care {
-    background-image: url("../img/blog-imgs/gift.png");
+.aside__third {
+    background-image: url("../img/blog-imgs/Group.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 16px;
 }
 
-.aside__add {
-    
+.aside__third p {
+    margin: 60px auto;
+    width: 220px;
+    color: #FFF;
 
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.aside__fourth {
     border-radius: 24px;
     border: 1px solid #DEDEDE;
     background: #FFF;
@@ -486,7 +550,43 @@ aside {
     height: 304px;
 }
 
-.aside__add_button-buy {
+.aside__fourth_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.aside__fourth h3 {
+    margin: 0;
+
+    color: #2963A3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.aside__fourth p {
+    width: inherit;
+    margin: 0;
+
+    color: var(--primery-b-10, #011632);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.aside__fourth strong {
+    color: #333;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.aside__fourth_button-buy {
     text-align: center;
     width: 108px;
     padding: 12px 16px;

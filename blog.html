@@ -51,22 +51,21 @@
 
     <main>
 
-        <section>
-            <span class="top-menu">
-                <a href="#" class="top-menu__el" title="Перейти на страницу &#34Главная&#34">Главная</a> 
-                <svg class="top-menu__el" xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
-                    <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" 
-                    stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <a href="#" class="top-menu__el" title="Перейти на страницу &#34Блог&#34">Блог</a>
-                <svg class="top-menu__el" xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
-                    <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" 
-                    stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <a href="#" class="top-menu__el" 
-                title="Перейти на страницу &#34Как не утонуть в тревоге и управлять своими страхами&#34">
-                Как не утонуть в тревоге и управлять своими страхами</a>
-            </span>
+        <section class="top-menu">
+            <a href="#" class="top-menu__el" title="Перейти на страницу &#34Главная&#34">Главная</a> 
+            <svg class="top-menu__el" xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" 
+                stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="#" class="top-menu__el" title="Перейти на страницу &#34Блог&#34">Блог</a>
+            <svg class="top-menu__el" xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" 
+                stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="#" class="top-menu__el" 
+            title="Перейти на страницу &#34Как не утонуть в тревоге и управлять своими страхами&#34">
+            Как не утонуть в тревоге и управлять своими страхами</a>
+            
         </section>
 
         <section class="content">
@@ -74,7 +73,10 @@
 
                 <h1>Как не утонуть в тревоге и управлять своими страхами</h1>
     
-                <p class="blog__copyright">Автор: Лиза Файнтух &#183 21.08.2021</p>
+                <p class="blog__copyright">
+                    Автор: Лиза Файнтух &#183 21.08.2021  
+                    <span class="mini-tag">· <a href="#">Self</a></span>
+                </p>
     
                 <img src="img/blog-imgs/main-img.png" class="blog__img" alt="Как не утонуть">
     
@@ -117,10 +119,9 @@
                     <p>
                         Давайте, к примеру, разберем тревогу. Можно разложить перед собой целую коллекцию доступных реакций и выбрать нужную:
                         <blockquote>
-                            <p>Мы знаем, что нуждаться в помощи и поддержке в трудные периоды жизни абсолютно нормально для любого человека, 
-                                и стремимся сделать психотерапию безопасной, удобной и доступной каждому
-                            </p>
-                            <p><strong>Ана Крымская</strong></p>
+                            Мы знаем, что нуждаться в помощи и поддержке в трудные периоды жизни абсолютно нормально для любого человека, 
+                            и стремимся сделать психотерапию безопасной, удобной и доступной каждому <br>
+                            <strong>Ана Крымская</strong>
                         </blockquote>
                     </p>
     
@@ -279,12 +280,12 @@
             </section>
     
             <aside>
-                <div class="aside__first-one">
+                <div class="aside__first">
                     
                     <img src="img/blog-imgs/family.png" alt="Семья">
                     
                     
-                    <h2>Загружаем свободные окошки</h2>
+                    <h1>Загружаем свободные окошки</h1>
     
                     <article>
                         Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату,  время встречи и оплатить её
@@ -302,13 +303,13 @@
                     <img src="img/blog-imgs/second-aside/photo.png" class="aside__second_photo" alt="Фото Лилии">
                     
 
-                    <div class="aside__psyhologist-info">
+                    <div class="aside__second_psyhologist-info">
                         <h2>Лилия</h2>
                         <p><strong>Психолог</strong></p>
                         <p>Опыт 6 лет &#183 43 года</p>
                     </div>
 
-                    <div class="aside__psyhologist-work">
+                    <div class="aside__second_psyhologist-work">
                         <p><strong>С чем работает психолог</strong></p>
                         <ul>
                             <li>Тревога, тревожности</li>
@@ -320,16 +321,20 @@
                     <button class="aside__get-more">Подробнее</button>
                 </div>
 
-                <div class="aside__give-care"></div>
+                <div class="aside__third">
+                    <p>Дарите заботу</p>
+                </div>
 
-                <div class="aside__add">
-                    <h3>8 Видео сессий</h3>
+                <div class="aside__fourth">
+                    <div class="aside__fourth_wrap">
+                        <h3>8 Видео сессий</h3>
 
-                    <p>Проработать небольшие проблемы и продвинуться в решении сложных запросов</p>
-
-                    <h2>18 500 ₽</h2>
-
-                    <button class="aside__add_button-buy">Купить</button>
+                        <p>Проработать небольшие проблемы и продвинуться в решении сложных запросов</p>
+    
+                        <p><strong>18 500 ₽</strong></p>
+    
+                        <button class="aside__fourth_button-buy">Купить</button>
+                    </div>
                 </div>
             </aside>
         </section>

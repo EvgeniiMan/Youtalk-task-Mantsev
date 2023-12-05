@@ -10,9 +10,6 @@ footer {
     flex-wrap: wrap;    
     
     align-items: center;
-
-    
-    
 }
 
 
@@ -260,7 +257,7 @@ footer {
     .footer__subscription p,
     .footer__subscription_send-email,
     .send-email__input {
-        width: 288px;
+        width: 280px;
     }
 
     .footer__contacts {
@@ -273,7 +270,7 @@ footer {
     }
 
     .footer__copyrights {
-        width: 728px;
+        width: 280px;
         margin: 0;
     }
 

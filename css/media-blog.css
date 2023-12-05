@@ -1,16 +1,78 @@
-@media screen and (min-width: 414px) {
-    /* main content */
+@media screen and (min-width: 320px) and  (max-width: 413px) {
     main {
+        width: 90%;
+    }
+
+    .blog {
         width: 100%;
     }
 
     .content {
-        flex-direction: column;
-        gap: 2em;
+        flex-wrap: wrap;
+        gap: 0;
     }
 
-    .blog {
+    .blog h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .blog__content h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .blog__centered-text {
+        padding: 0;
+        height: 176px;
+    }
+
+    .blog__img-with-text-on-right {
+        flex-direction: column;
+    }
+
+    .blog__many-imgs {
+        flex-direction: column;
+    }
+    
+    aside {
+        margin-top: 23px;
+        margin-bottom: 59px;
         flex: 0 0 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .aside__first {
+        padding: 23px;
+    }
+
+    .aside__second {
+        padding: 24px;
+    }
+
+    .aside__third {
+        height: 292px; 
+         
+    } 
+
+    .aside__fourth {
+        box-sizing: border-box;
+        
+        padding: 24px;
+        
+    }
+
+    .aside__fourth_wrap {
+        width: 174px;
+        
+    }
+    
+    
+    .mini-tag {
+        display: inline;
     }
 
     .blog__tags {
@@ -31,142 +93,402 @@
 }
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 414px) and (max-width: 767px) {
     main {
-        width: 100%;
+        width: 90%;
     }
 
     .blog {
-        flex: 0 0 100%;
-    }
-
-}
-
-@media screen and (min-width: 768px){
-   /* main index */
-    main {
-        width: 100%;
-    }
-
-    .blog {
-        flex: 0 0 100%;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2em;
-        box-sizing: content-box;
-    }
-
-    .aside__first-one{
-        width: calc(46.5% - 2em);
-        padding: 14px 23px;
-    }
-
-    .aside__first-one img {
-        width: 257px;
-        height: 206px;
-    }
-
-    .aside__second {
-        width: calc(46.5% - 2em);
-    }
-
-    .aside__give-care {
-        width: calc(46.5% - 2em);
-        height: 242px;
-    }
-
-    .asid__add {
-        width: calc(46.5% - 2em);
-        height: 242px;
-    }
-   
-}
-
-@media screen and (min-width: 1024px) {
-   /* main index */
-    main {
         width: 100%;
     }
 
     .content {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .blog h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .blog__content h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .blog__centered-text {
+        padding: 0;
+        height: 168px;
+    }
+
+    .blog__img-with-text-on-right {
+        flex-direction: column;
+    }
+
+    .blog__many-imgs {
+        flex-direction: column;
+    }
+    
+    aside {
+        margin-top: 23px;
+        margin-bottom: 59px;
+        flex: 0 0 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .aside__first {
+        padding: 23px;
+    }
+
+    .aside__second {
+        padding: 24px;
+    }
+
+    .aside__third {
+        height: 292px; 
+         
+    } 
+
+    .aside__fourth {
+        box-sizing: border-box;
+        
+        padding: 24px;
+        
+    }
+
+    .aside__fourth_wrap {
+        width: 174px;
+        
+    }
+    
+    
+    .mini-tag {
+        display: inline;
+    }
+
+    .blog__tags {
+        display: none;
+    }
+
+    .get-psychologist {
+        display: none;
+    }
+
+    .blog-separator {
+        display: none;
+    }
+
+    .right-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+   /* main index */
+    main {
+        width: 90%;
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .blog h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .blog__content h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .blog__img-with-bottom-text {
+        gap:24px;
+    }
+
+    .blog__centered-text {
+        padding-top: 24px;
+        height: 150px;
+    }
+
+    .blog__centered-text p {
+        width: 485px;
+    }
+
+    .blog__img-with-text-on-right {
         flex-direction: row;
+    }
+
+    .blog__many-imgs {
+        flex-direction: row;
+    }
+
+    aside {
+        margin-top: 23px;
+        margin-bottom: 59px;
+        flex: 0 0 100%;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .aside__first {
+        padding: 23px;
+    }
+
+    .aside__second {
+        padding: 24px;
+    }
+
+    /* .aside__third {
+        height: 292px; 
+        width: 222px;  
+    } */
+
+    .aside__fourth {
+        box-sizing: border-box;
+        
+        padding: 24px;
+        
+    }
+
+    .aside__fourth_wrap {
+        width: 174px;
+        
+    }
+
+    
+   
+    .mini-tag {
+        display: inline;
+    }
+
+    .blog__tags {
+        display: none;
+    }
+
+    .get-psychologist {
+        display: none;
+    }
+
+    .blog-separator {
+        display: none;
+    }
+
+    .right-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+   /* main index */
+    main {
+        width: 90%;
+    }
+
+    .content {
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 71px;
     }
     
 
     .blog {
-        flex: 0 0 50%;
+        width: 714px;
+        /* flex: 0 0 50%; */
     }
 
-    aside {
-        width: 222px;
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        box-sizing: content-box;
+    .blog h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .blog__content h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .blog__img-with-bottom-text {
+        gap:24px;
+    }
+
+    .blog__centered-text {
+        padding-top: 24px;
+        height: 150px;
+    }
+
+    .blog__centered-text p {
+        width: 485px;
+    }
+
+    .blog__img-with-text-on-right {
+        flex-direction: row;
+    }
+
+    .blog__many-imgs {
+        flex-direction: row;
     }
     
-    .aside__first-one img {
-        width: 174px;
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: flex-start;
+        
+        
+        width: 222px;
     }
 
-    .aside__give-care {
-        height: 292px;
-    }
-
-    .aside__add {
+    .aside__first {
         padding: 24px;
+    }
+
+    .aside__second {
+        padding: 24px;
+    }
+
+    .aside__third {
+        height: 292px; 
+        width: 222px;  
+    }
+
+    .aside__fourth {
+        box-sizing: border-box;
+        width: 222px;
+        padding: 24px;
+        
+    }
+
+    .aside__fourth_wrap {
+        width: 174px;
+        
+    }
+
+    .mini-tag {
+        display: inline;
+    }
+
+    .blog__tags {
+        display: none;
+    }
+
+    .get-psychologist {
+        display: none;
+    }
+
+    .blog-separator {
+        display: none;
+    }
+
+    .right-box {
+        display: none;
     }
    
 }
 
 @media screen and (min-width: 1440px) {
 
-   /* main index */
     main {
         width: 80%;
     }
 
+
     .blog {
-        flex: 0 0 50%;
+        width: 690px;
+        /*flex: 0 0 50%; */
+    }
+
+    .blog h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .blog__content h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .blog__centered-text {
+        padding-top: 24px;
+        height: 150px;
+    }
+
+    .blog__centered-text p {
+        width: 485px;
+    }
+
+    .blog__img-with-text-on-right {
+        flex-direction: row;
+    }
+
+    .mini-tag {
+        display: none;
     }
 
     .blog__tags {
         display: block;
     }
 
-    aside {
-        
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
+    .blog__img-with-bottom-text {
+        gap:24px;
     }
 
-    .aside__first-one {
-        box-sizing: content-box;
+    .blog__many-imgs {
+        flex-direction: row;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: flex-start;
+        
+        
         width: 282px;
+    }
+
+    .aside__first {
+        padding: 24px;
     }
 
     .aside__second {
-        width: 282px;
+        padding: 24px;
     }
 
-    .aside__give-care {
+    .aside__third {
         height: 292px; 
+        width: 282px;  
+    }
+
+    .aside__fourth {
+        box-sizing: border-box;
         width: 282px;
+        padding: 32px;
         
     }
 
-    .aside__add {
-        padding: 32px;
+    .aside__fourth_wrap {
+        width: 218px;
+        
     }
+
 
     .right-box {
         display: block;
     }
+
+
 
     .blog-separator {
         display: block;
